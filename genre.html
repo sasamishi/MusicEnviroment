@@ -1,0 +1,139 @@
+<!--University Of Kuala Lumpur-->
+<!--Zahran Zharif Bin Junaidi 52052120071-->
+<!--Music Enviroment-->
+<!--Norzhaharizan Binti Puteh-->
+<!--17 May 2021-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genre</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <style>
+        a:link{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="media.html">Media</a>
+          <a href="instrument.html">Instrument</a>
+          <a href="genre.html">Genre</a>
+          <a href="class.html">Music Class</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<div class="cont">
+
+    <h1>ALL POPULAR <br>GENRES</h1>
+
+    <div class="roundimg1" >
+        <div ><a href="#kpop"><img src="kpop.png" alt=""><p>Kpop</p></a></div>
+        <div ><a href="#rock"><img src="rock.jpg" alt=""><p>Rock And Roll</p></a></div>
+    </div>
+    <div class="roundimg2">
+        <div ><a href="#pop"><img src="pop.jpg" alt=""><p>Pop</p></a></div>
+        <div ><a href="#hip"><img src="hip-hop.png" alt=""><p>Hip-Hop</p></a></div>
+        <div ><a href="#poetic"><img src="poetic.jpg" alt=""><p>Poetic Songs</p></a></div>
+    </div>
+
+    <h1>GENRES</h1>
+
+    <div class="drum" id="kpop">
+        <div class="drum_pic">
+            <iframe width="800" height="345" src="https://www.youtube.com/embed/qfVuRQX0ydQ">
+            </iframe>
+        </div>
+        <h3>kpop wave</h3>
+        <p>Annyeong kpoppers! kpop comes from korean pop music which is all known among teens.
+           Click here for more info about kpop songs!!</p>
+    </div>
+
+    <div class="drum" id="rock">
+        <div class="drum_pic">
+            <iframe width="800" height="345" src="https://www.youtube.com/embed/zCPAMvL2KPo">
+            </iframe>
+        </div>
+        <h3>Rock n' Roll</h3>
+        <p>Rock n roll influences fashion , lifestyle, attitudes and language. 
+           As you know Elvis Presley is the roll icon of rock n roll</p>
+    </div>
+
+    <div class="drum" id="pop">
+        <div class="drum_pic">
+            <iframe width="800" height="345" src="https://www.youtube.com/embed/UOxkGD8qRB4">
+            </iframe>
+        </div>
+        <h3>Pop</h3>
+        <p>Pop is one of the popular genre today as it produces the most hits. 
+           They also produces good rhythm, catchy melody, also easy to remember and sing along!!</p>
+    </div>
+
+    <div class="drum" id="hip">
+        <div class="drum_pic">
+            <iframe width="800" height="345" src="https://www.youtube.com/embed/P00HMxdsVZI">
+            </iframe>
+        </div>
+        <h3>Hip-Hop</h3>
+        <p>Hiphop is more to rapping which is not easier than playing an instrument.
+           It requires beat pattern that gives the boastful rhyming pattern intoned by the rapper.</p>
+    </div>
+
+    <div class="drum" id="poetic">
+        <div class="drum_pic">
+            <iframe width="800" height="345" src="https://www.youtube.com/embed/aatr_2MstrI">
+            </iframe>
+        </div>
+        <h3>Poetic Songs</h3>
+        <p>Music exposes children to rhyme, rhythm, and repetition, which are the some of 
+           the same skills needed to learn to read. 
+           Because poetry has cadence, rhythm, and rhyme, music may be used to complement it.
+           All cultures use music to communicate, and the sounds and rhythms of music cross cultural boundaries.</p>
+    </div>
+
+
+
+</div>
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>

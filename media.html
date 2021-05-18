@@ -1,0 +1,111 @@
+<!--University Of Kuala Lumpur-->
+<!--Zahran Zharif Bin Junaidi 52052120071-->
+<!--Music Enviroment-->
+<!--Norzhaharizan Binti Puteh-->
+<!--17 May 2021-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="music.css">
+    <style>
+        a:link{
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="media.html">Media</a>
+          <a href="instrument.html">Instrument</a>
+          <a href="genre.html">Genre</a>
+          <a href="class.html">Music Class</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <div class="cont">
+
+        <h1>Media Music</h1>
+
+        <div class="mediaimg">
+            <img src="meidaimg1.jpg">
+        </div>
+        
+        <h1>Latest music <br>songs</h1>
+
+        <div class="round">
+            <div><a href="https://www.youtube.com/watch?v=fzeWc3zh01g" target="_blank"><img src="billie.jpg" alt=""><p>Your Power</p></a></div>
+        </div>
+
+        <div class="roundimg1">
+            <div ><a href="https://www.youtube.com/watch?v=2sBRnnnZyFw" target="_blank"><img src="choker12.jpg" alt=""><p>Choker</p></a></div>
+            <div ><a href="https://www.youtube.com/watch?v=Ut85dWwrTV8" target="_blank"><img src="twyf.jpg" alt=""><p>The Way You Felt</p></a></div>
+        </div>
+
+        <h1>Most Recommended</h1>
+
+        <div class="roundimg2">
+            <div ><a href="https://www.youtube.com/watch?v=sOnqjkJTMaA" target="_blank"><img src="thriller.jpg" alt=""><p>Thriller</p></a></div>
+            <div ><a href="https://www.youtube.com/watch?v=79fzeNUqQbQ" target="_blank"><img src="like a player.png" alt=""><p>Like A Player</p></a></div>
+            <div ><a href="https://www.youtube.com/watch?v=UG3VcCAlUgE" target="_blank"><img src="when doves cry.jpg" alt=""><p>When Doves Cry</p></a></div>
+        </div>
+
+        <div class="roundimg1" id="round">
+            <div ><a href="https://www.youtube.com/watch?v=eH3giaIzONA" target="_blank"><img src="i wanna dance.jpg" alt=""><p>I Wanna Dance With Somebody</p></a></div>
+            <div ><a href="https://www.youtube.com/watch?v=C-u5WLJ9Yk4" target="_blank"><img src="baby one.jpg" alt=""><p>Baby One More Time</p></a></div>
+        </div>
+
+        <h1>DESCRIPTION</h1>
+
+        <div class="mediaimg">
+            <img src="media back.jpg">
+        </div>
+
+        <h2 style="font-size: 72;">Here are some melodious, sweet songs for you to listen , Enjoy it while it lasts.</h2>
+
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!--University Of Kuala Lumpur-->
+<!--Zahran Zharif Bin Junaidi 52052120071-->
+<!--Zahran Zharif Bin Junaidi 52052120071-->
+<!--Music Enviroment-->
+<!--Norzhaharizan Binti Puteh-->
+<!--17 May 2021-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="icon" href="twyf.jpg">
+</head>
+<body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="media.html">Media</a>
+          <a href="instrument.html">Instrument</a>
+          <a href="genre.html">Genre</a>
+          <a href="class.html">Music Class</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="container">
+        <section id="showcase">
+            <div class="cont">
+                <h1>World of Music</h1>
+            </div>
+        </section>
+
+        <div class="box1">
+            <h1><i>Media </i></h1>
+            <p>Media Music is a commonly used term to describe music specifically written for use in film, tv production, commercials, radio, gaming, corporate videos the internet and more.
+                Media Music is used for a vast number of media uses. Everything from "hold music" to the top Hollywood blockbusters use Media Music. Media Music is written with the intention of enhancing a product or production. 
+                It is not written specifically for direct sale to the public
+            </p>
+            <a href="media.html" class="butt">READ MORE</a>
+        </div>
+        <div class="box2">
+            <h1><i>Instrument</i></h1>
+            <p>A place where you can learn and buy instrument to indulge yourself in the world of music.
+            </p>
+            <a href="instrument.html" class="butt">READ MORE</a>
+        </div>
+        <div class="box1" id="genre">
+            <h1><i>Genre</i></h1>
+            <p>a category of artistic, musical, or literary composition characterized by a particular style, form, or content
+            </p>
+            <a href="genre.html" class="butt">READ MORE</a>
+        </div>
+        <div class="box2" id="class">
+            <h1><i>Music Class</i></h1>
+            <p>A bunch of news for the user catch with the world of music cause entertainment
+                is widely use in the whole wide world.
+            </p>
+            <a href="class.html" class="butt">READ MORE</a>
+        </div>
+        <div class="box1" id="about">
+            <h1><i>About Us</i></h1>
+            <p>This platform where you can ask us about our website
+                you can either send us email or just contact us
+            </p>
+            <a href="about.html" class="butt">READ MORE</a>  
+        </div>
+        
+
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+</body>
+</html>

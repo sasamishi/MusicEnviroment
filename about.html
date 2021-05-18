@@ -1,0 +1,164 @@
+<!--University Of Kuala Lumpur-->
+<!--Zahran Zharif Bin Junaidi 52052120071-->
+<!--Music Enviroment-->
+<!--Norzhaharizan Binti Puteh-->
+<!--17 May 2021-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="media.html">Media</a>
+      <a href="instrument.html">Instrument</a>
+      <a href="genre.html">Genre</a>
+      <a href="class.html">Music Class</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="cont2">
+
+        <h1>ABOUT US</h1>
+
+        <div class="right">
+            <div class="right1"><img src="about.jpg" width="500px" height="500px"></div>
+            <div class="right2">
+            <p>
+                We are the unikl students who are doing this for our final assignment for 
+                Web Development. Content that are in this web is just for the project purposes.
+            </p>
+          </div>
+        </div>
+
+        <h1>Social Media</h1>
+
+        <div class="sc">
+
+            <div class="sc1" ><img src="qis2.1.jpg">
+              <div class="icon">
+                <i class="fa fa-instagram" style="font-size:36px"></i>
+                <i class="fa fa-twitter" style="font-size:36px"></i>
+                <i class="fa fa-facebook-f" style="font-size:36px"></i>
+              </div>
+              <p>Qistina kirana Bt Wan Mustzaffar Shah</p>
+            </div>
+
+            
+            <div class="sc2"><img src="zahran2.0.jpg">
+              <div class="icon">
+                <i class="fa fa-instagram" style="font-size:36px"></i>
+                <i class="fa fa-twitter" style="font-size:36px"></i>
+                <i class="fa fa-facebook-f" style="font-size:36px"></i>
+              </div>
+              <p>Zahran Zharif Bin Junaidi</p>
+            </div>
+
+        </div>
+        
+        <div class="form">
+          <h2>Submit Form</h2>
+          
+          <div class="contain">
+            <form action="#">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Email</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your Email...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="australia">Malaysia</option>
+                    <option value="canada">Japan</option>
+                    <option value="usa">China</option>
+                    <option value="usa">Korea</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+
+        </div>
+        <h3>Please State in Mind the web that you are surfing is just based for Unikl Students Project.</h3>
+
+        <div class="ref">
+          <h2>Refference</h2>
+          <table>
+            <tr>
+              <th>9anime</th>
+              <th><a href="https://www14.9anime.to/home" target="_blank">Link to the website</a></th>
+            </tr>
+            <tr>
+              <th>W3Schools</th>
+              <th><a href="https://www.w3schools.com/default.asp" target="_blank">Link to the website</a></th>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+     <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      <script src="music.js"></script>
+</body>
+</html>
